@@ -1,0 +1,49 @@
+<! ALL RIGHTS RESERVED >
+<html>
+    <head>
+        <title>Pedra, Papel e Tesoura</title>
+        <link rel="shortcut icon" href="https://lh3.googleusercontent.com/t19zqdDL80jKzdMsVN8ma1zrH-jaQ7Ln9VAedM9dve80rEz6-0qJpukIz3eaW4W7NifK=w300" width="32" height="32">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <script type="text/javascript" src="pedrapapeltesoura.js"></script>
+        <div id="main">
+            <h1>
+                <img id="pedra" src="http://museudafala.com/exposicoes/drummond/imagens3/pedra.png" width="128" height="128">
+                <img id="tesoura" src="http://1.bp.blogspot.com/-TEbSxwqZ7hw/UV5ZapO228I/AAAAAAAATms/51Ze67M7G7Y/s1600/Imagens-em-png-queroimagem.com+(113).png" width="65" height="74">
+                <img id="papel" src="https://orig00.deviantart.net/85b9/f/2011/256/a/3/png_hoja_de_papel_by_fluuffyteddy-d49ps2i.png" width="128" height="128">
+            </h1><br>
+            <select id="opcaojogador">
+                    <option value=""> -- Escolha a opção -- </option>
+                    <option value="pedra"> Pedra </option>
+                    <option value="papel"> Papel </option>
+                    <option value="tesoura"> Tesoura </option>
+            </select>
+            <input type="button" value="Jogar" id="play" /><br><br><br><br>
+            <table>
+                    <tr>
+                        <th id="thjogador">Jogador</th>
+                        <td></td>
+                        <th>Computador</th>
+                    </tr>
+                    <tr>
+                        <td id="cmpjogador">--</td>
+                        <td> X </td>
+                        <td id="cmpcomputador">--</td>
+                    </tr>
+                    <tr>
+                        <th>Vencedor: </th>
+                        <td></td>
+                        <td id="cmpvencedor">--</td>
+                    </tr>        
+                </table><br><br><br>
+            <font id="score">------ Placar ------</font><br><br>
+            <label for="placarjogador" id="labeljogador"><font>Jogador</font></label>
+            <input type="text" id="placarjogador" class="placar" readonly="readonly" value="0" />
+            X
+            <input type="text" id="placarcomputador" class="placar" readonly="readonly" value="0" />
+            <label for="placarcomputador"><font>Computador</font></label>
+        </div>
+        <font class="copyright">©Copyright - Yasmin Hermanson Kruger 2018</font>
+    </body>
+</html>
